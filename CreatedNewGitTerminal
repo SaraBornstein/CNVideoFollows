@@ -1,0 +1,223 @@
+Last login: Thu Mar 26 17:09:21 on ttys000
+MacBook-Pro:~ sarabornstein$ cd Documents/CodingNomads/labs/
+MacBook-Pro:labs sarabornstein$ ls -al
+total 16
+drwxr-xr-x   5 sarabornstein  staff   160 Mar 26 16:13 .
+drwxr-xr-x  10 sarabornstein  staff   320 Mar 25 09:51 ..
+-rw-r--r--@  1 sarabornstein  staff  6148 Mar 26 17:10 .DS_Store
+drwxr-xr-x   7 sarabornstein  staff   224 Mar 26 17:12 javaPrimitiveDataTypes
+drwxr-xr-x   9 sarabornstein  staff   288 Mar 26 13:42 online-java-fundamentals
+MacBook-Pro:labs sarabornstein$ cd javaPrimitiveDataTypes/
+MacBook-Pro:javaPrimitiveDataTypes sarabornstein$ ls -al
+total 24
+drwxr-xr-x  7 sarabornstein  staff   224 Mar 26 17:12 .
+drwxr-xr-x  5 sarabornstein  staff   160 Mar 26 16:13 ..
+-rw-r--r--@ 1 sarabornstein  staff  6148 Mar 26 17:10 .DS_Store
+drwxr-xr-x  5 sarabornstein  staff   160 Mar 26 17:15 .idea
+-rw-r--r--  1 sarabornstein  staff   423 Mar 26 16:14 javaPrimitiveDataTypesSaraCreated.iml
+drwxr-xr-x  3 sarabornstein  staff    96 Mar 26 17:03 out
+drwxr-xr-x  4 sarabornstein  staff   128 Mar 26 17:10 src
+MacBook-Pro:javaPrimitiveDataTypes sarabornstein$ cd ../
+MacBook-Pro:labs sarabornstein$ cd online-java-fundamentals/
+MacBook-Pro:online-java-fundamentals sarabornstein$ ls -al
+total 24
+drwxr-xr-x   9 sarabornstein  staff   288 Mar 26 13:42 .
+drwxr-xr-x   5 sarabornstein  staff   160 Mar 26 16:13 ..
+drwxr-xr-x  15 sarabornstein  staff   480 Mar 26 13:55 .git
+-rwxr-xr-x   1 sarabornstein  staff    17 Mar 25 12:06 .gitignore
+drwxr-xr-x   6 sarabornstein  staff   192 Mar 26 17:35 .idea
+-rwxr-xr-x   1 sarabornstein  staff  2161 Mar 25 20:12 README.md
+-rw-r--r--   1 sarabornstein  staff   423 Mar 26 09:26 online-java-fundamentals.iml
+drwxr-xr-x   3 sarabornstein  staff    96 Mar 26 10:02 out
+drwxr-xr-x   5 sarabornstein  staff   160 Mar 25 12:06 src
+MacBook-Pro:online-java-fundamentals sarabornstein$ cd ../javaPrimitiveDataTypes/
+MacBook-Pro:javaPrimitiveDataTypes sarabornstein$ git init
+Initialized empty Git repository in /Users/sarabornstein/Documents/CodingNomads/labs/javaPrimitiveDataTypes/.git/
+MacBook-Pro:javaPrimitiveDataTypes sarabornstein$ ls -al
+total 24
+drwxr-xr-x  8 sarabornstein  staff   256 Mar 26 17:41 .
+drwxr-xr-x  5 sarabornstein  staff   160 Mar 26 16:13 ..
+-rw-r--r--@ 1 sarabornstein  staff  6148 Mar 26 17:39 .DS_Store
+drwxr-xr-x  9 sarabornstein  staff   288 Mar 26 17:41 .git
+drwxr-xr-x  5 sarabornstein  staff   160 Mar 26 17:15 .idea
+-rw-r--r--  1 sarabornstein  staff   423 Mar 26 16:14 javaPrimitiveDataTypesSaraCreated.iml
+drwxr-xr-x  3 sarabornstein  staff    96 Mar 26 17:03 out
+drwxr-xr-x  4 sarabornstein  staff   128 Mar 26 17:10 src
+MacBook-Pro:javaPrimitiveDataTypes sarabornstein$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.DS_Store
+	.idea/
+	javaPrimitiveDataTypesSaraCreated.iml
+	out/
+	src/
+
+nothing added to commit but untracked files present (use "git add" to track)
+MacBook-Pro:javaPrimitiveDataTypes sarabornstein$ vim .gitignore
+MacBook-Pro:javaPrimitiveDataTypes sarabornstein$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.gitignore
+	src/
+
+nothing added to commit but untracked files present (use "git add" to track)
+MacBook-Pro:javaPrimitiveDataTypes sarabornstein$ git add .gitignore src
+MacBook-Pro:javaPrimitiveDataTypes sarabornstein$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   .gitignore
+	new file:   src/CodingNomads/examples/datatypes/DataTypes.java
+	new file:   src/CodingNomads/examples/temp
+	new file:   src/CodingNomads/temp
+
+MacBook-Pro:javaPrimitiveDataTypes sarabornstein$ git commit -m "First Commit"
+[master (root-commit) 1385ade] First Commit
+ Committer: Sara Bornstein <sarabornstein@MacBook-Pro.localdomain>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 4 files changed, 44 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 src/CodingNomads/examples/datatypes/DataTypes.java
+ create mode 100644 src/CodingNomads/examples/temp
+ create mode 100644 src/CodingNomads/temp
+MacBook-Pro:javaPrimitiveDataTypes sarabornstein$ git config --global --edit
+MacBook-Pro:javaPrimitiveDataTypes sarabornstein$ git log
+commit 1385ade4e7a170cd4beac25105bba10b141b23c7 (HEAD -> master)
+Author: Sara Bornstein <sarabornstein@MacBook-Pro.localdomain>
+Date:   Thu Mar 26 17:45:42 2020 -0800
+
+    First Commit
+MacBook-Pro:javaPrimitiveDataTypes sarabornstein$ git remote add origin https://github.com/SaraBornstein/PrimitiveVariable.git
+MacBook-Pro:javaPrimitiveDataTypes sarabornstein$ git push -u origin master
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (9/9), 1008 bytes | 1008.00 KiB/s, done.
+Total 9 (delta 0), reused 0 (delta 0)
+To https://github.com/SaraBornstein/PrimitiveVariable.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+MacBook-Pro:javaPrimitiveDataTypes sarabornstein$ history
+    1  java -version
+    2  cd ~/Documents
+    3  mkdir CodingNomads
+    4  cd CodingNomads
+    5  mkdir resources labs projects
+    6  cd /Users/sarabornstein/
+    7  pwd
+    8  cd /
+    9  pwd
+   10  cd ~
+   11  pwd
+   12  cd ~/Documents/
+   13  pdw
+   14  pwd
+   15  ls
+   16  cd CodingNomads/
+   17  pwd
+   18  cd ~/Documents/CodingNomads/labs/
+   19  git clone https://github.com/CodingNomads/online-java-fundamentals.git
+   20  git clone https://github.com/CodingNomads/online-java-fundamentals.git
+   21  cd online-java-fundamentals
+   22  git clone https://github.com/CodingNomads/online-java-fundamentals.git
+   23  cd online-java-fundamentals
+   24  ls -al
+   25  git status
+   26  git remote add sara https://github.com/SaraBornstein/Java-Fundamentals.git
+   27  git remote -v
+   28  git push sara master
+   29  git push sara master
+   30  git --version
+   31  cd ~/Documents/CodingNomads/labs/online-java-fundamentals/
+   32  ls -al
+   33  git status
+   34  vim README.md
+   35  git status
+   36  git add README.md
+   37  git status
+   38  git commit -m "First commit - CodingNomads Online Java Labs"
+   39  git log
+   40  cd ~/Documents/CodingNomads/labs/online_java-fundamentals
+   41  cd /
+   42  pwd
+   43  cd ~/Documents/CodingNomads/labs/online_java-fundamentals
+   44  cd ~/Documents/CodingNomads/labs/online-java-fundamentals
+   45  git remote -v
+   46  git push -u sara mater
+   47  git push -u sara master
+   48  git remote -v
+   49  git status
+   50  ls -al
+   51  vim README.md
+   52  git status
+   53  git add README.md
+   54  git status
+   55  git commit
+   56  git log
+   57  git remote -v
+   58  git pull origin master
+   59  git push sara master
+   60  vim README.md
+   61  git add README.md
+   62  git commit -m "3rd edit git practice"
+   63  git log
+   64  git status
+   65  git push
+   66  cd ~/Documents/CodingNomads/labs/online-java-fundamentals/
+   67  ls -al
+   68  vim.gitignore
+   69  vim .gitignore
+   70  git status
+   71  git remote -v
+   72  git add src/labs_examples/fundamentals/labs/Exercise_03.java
+   73  git status
+   74  git commit -m "completed Exercise_03"
+   75  git push
+   76  cd Documents/CodingNomads/labs/
+   77  ls -al
+   78  cd javaPrimitiveDataTypes/
+   79  ls -al
+   80  cd ../
+   81  cd online-java-fundamentals/
+   82  ls -al
+   83  cd ../javaPrimitiveDataTypes/
+   84  git init
+   85  ls -al
+   86  git status
+   87  vim .gitignore
+   88  git status
+   89  git add .gitignore src
+   90  git status
+   91  git commit -m "First Commit"
+   92  git config --global --edit
+   93  git log
+   94  git remote add origin https://github.com/SaraBornstein/PrimitiveVariable.git
+   95  git push -u origin master
+   96  history
+MacBook-Pro:javaPrimitiveDataTypes sarabornstein$ 
