@@ -3,9 +3,9 @@ package CodingNomads.examples.classes;
 //This class is a POJO (Plain Old Java Object)
 public class Person { //first letter of class is always capitalized.
     //instance variable
-   int age;
-   double height;
-   String name;
+   public int age;
+   public double height;
+   public String name;
 
     //Constructors
         //overloading: same constructor, one without parameters, one with. PersonController will call first one, PersonController2 will call the parameterized constructor.
@@ -19,5 +19,12 @@ public class Person { //first letter of class is always capitalized.
     }
 
     //methods
-
+    @Override
+    public String toString() {
+        return "Person{" +
+                "age=" + age +
+                ", height=" + height +
+                ", name='" + name + '\'' +
+                '}';
+    }
 }

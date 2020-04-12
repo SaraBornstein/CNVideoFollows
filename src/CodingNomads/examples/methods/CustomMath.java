@@ -10,6 +10,10 @@ public class CustomMath {
          */
     }
 
+    public static double multiply(double a, double b) { //example of overloading method. Same method name, different type or number of parameters.
+        return a * b;
+    }
+
     public int divide(int a, int b){ //the "static" word is optional, however without static, need to create an object of class CustomMath in MathController(class calling this method)
         return a / b; //Side note: This can throw an exception if b == 0.
     }
