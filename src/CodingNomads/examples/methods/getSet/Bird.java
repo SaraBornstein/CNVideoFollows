@@ -6,7 +6,7 @@ public class Bird {
         this.color = color;
     }
     public String getColor(){
-        return color.
+        return color;
     }
 }
 /*
