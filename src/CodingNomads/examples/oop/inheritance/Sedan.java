@@ -10,6 +10,12 @@ public class Sedan extends Vehicle {
                 this.trunkCapacity = trunkCapacity;
         }
 
+        @Override
+        public boolean start() {
+                System.out.println("starting sedan");
+                return false;
+        }
+
         //getter/setter
         public double getTrunkCapacity() {
                 return trunkCapacity;

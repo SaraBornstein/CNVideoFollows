@@ -1,5 +1,7 @@
 package CodingNomads.examples.oop.inheritance;
 
+import com.sun.xml.internal.bind.v2.TODO;
+
 public class Motorcycle extends Vehicle {
 
     private int cc;
@@ -15,6 +17,13 @@ public class Motorcycle extends Vehicle {
     public void demonstrateThisSuper(){
         this.accelerate(20);
         super.accelerate(30);
+    }
+
+    //must implement start method
+    @Override
+    public boolean start() {
+        System.out.println("starting motorcycle");
+        return false;
     }
 
     @Override // Stops people accidentally changing this or the overridden method. Will throw an error if the two methods differ.

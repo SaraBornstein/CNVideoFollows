@@ -1,13 +1,18 @@
 package CodingNomads.examples.oop.inheritance;
 
+import CodingNomads.examples.oop.polymorphism.Scooter;
+
 public class CarController {
     public static void main(String[] args) {
+
+
 
         //objects, subclasses of vehicle class
         Truck truck = new Truck("Ford", "F150", 120000, 500);
         Sedan sedan =  new Sedan("Honda", "Civic", 60000, 80);
-        Motorcycle moto = new Motorcycle("Ducati", "Monster", 500, 1000, false);
 
+        Motorcycle moto = new Motorcycle("Ducati", "Monster", 500, 1000, false);
+/*
         System.out.println(truck.getMake() + " " + truck.getModel()
         + " " + truck.getBedCapacity());
         truck.accelerate(10);
@@ -19,5 +24,14 @@ public class CarController {
         System.out.println(moto.getMake() + " " + moto.getModel()
                 + " " + moto.getCc());
         moto.accelerate(30); //This one has an override in th class Motorcycle so the accelerate acts differently.
+
+        moto.demonstrateThisSuper();
+*/
+        Scooter motorScooter = new Scooter();
+        moto.start();
+        motorScooter.start();
+
+        moto.accelerate(100);
+        motorScooter.accelerate(20);
     }
 }

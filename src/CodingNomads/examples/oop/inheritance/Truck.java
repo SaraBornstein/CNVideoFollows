@@ -11,6 +11,12 @@ public class Truck extends Vehicle {
         this.bedCapacity = bedCapacity;
     }
 
+    @Override
+    public boolean start() {
+        System.out.println("starting truck");
+        return false;
+    }
+
     //getter and setter
     public double getBedCapacity() {
         return bedCapacity;
