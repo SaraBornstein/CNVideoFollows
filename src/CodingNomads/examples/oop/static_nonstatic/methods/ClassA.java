@@ -12,7 +12,7 @@ public class ClassA {
 
         double pi = Math.PI; //Cannot make an obj of math class b/c constructor is private. Every one of its variables is static and final,
         //meaning does not pertain to any one specific variable. And final means it can't be changed.
-        //don't need an object to use the math class. 
+        //don't need an object to use the math class.
 
         //calling non-static method in the same class: (non-static methods work at the object level
         ClassA obj = new ClassA(); //create new object
