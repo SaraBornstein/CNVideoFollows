@@ -5,7 +5,7 @@ public class Truck extends Vehicle {
 
     private double bedCapacity;
 
-    //constructor with no params
+    //constructor
     public Truck(String make, String model, double miles, double bedCapacity) {
         super(make, model, miles);
         this.bedCapacity = bedCapacity;
