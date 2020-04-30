@@ -16,7 +16,9 @@ public class SomeClass {
         } catch (Exception exc) { //This one will catch everything else.
             System.out.println("error detected");
             exc.printStackTrace();
-        }
+        } finally { //will always run
+             System.out.println("will always execute");
+         }
 
             System.out.println("Program Complete");
     }
