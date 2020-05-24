@@ -9,7 +9,9 @@ Can have generic classes, methods, and constructors
 
 public class GenericsExample {
     public static void main(String[] args) {
-        int a = multiply(34, 56);
+        int a = multiply(34f, 56.45);
+
+
 
     ArrayList<String> aList = new ArrayList();
         aList.add("Hello Generics!");
@@ -40,6 +42,26 @@ public class GenericsExample {
      */
     public static int multiply(int a, int b){
             return a*b;
+    }
+    //instead of overload multiply() with several multiply statements with diff types,
+    //use generic method: <generic info in brackets describes types for parameter list>
+    public static <T extends Number, V extends Number> int multiply(T a, V b){
+        //above <> is example of bounded types, can use object types (Example: extends Vehicle)
+        return a.intValue() * b.intValue();
+    }
+
+    //simple generic method example
+    public static <T> void doSomething(T val){
+        System.out.println(val);
+    }
+
+    //wildcard generic method: '?' argument here is generic, this array list can be any type of number
+    public static double sumCollection(ArrayList<? extends Number> nums){
+        double sum = 0;
+        for(int i = 0; i < nums.size(); i++){
+            sum += (double) nums.get(i).doubleValue();
+        }
+        return sum;
     }
 
 }
